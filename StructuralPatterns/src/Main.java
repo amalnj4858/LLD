@@ -8,6 +8,8 @@ import CompositePattern.Square;
 import DecoratorPattern.QualityVideoPlayerDecorator;
 import DecoratorPattern.SpeedVideoPlayerDecorator;
 import DecoratorPattern.VideoPlayer;
+import ProxyPattern.DataLoader;
+import ProxyPattern.DataManagerProxy;
 
 import java.util.ArrayList;
 
@@ -47,5 +49,11 @@ public class Main {
         circle.paint();
         square.paint();
         diagram.paint();
+
+        System.out.println("\n");
+
+        DataLoader dataLoader = new DataManagerProxy("/users");
+        dataLoader.viewData();
+        dataLoader.viewData();
     }
 }
