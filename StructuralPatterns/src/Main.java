@@ -8,6 +8,8 @@ import CompositePattern.Square;
 import DecoratorPattern.QualityVideoPlayerDecorator;
 import DecoratorPattern.SpeedVideoPlayerDecorator;
 import DecoratorPattern.VideoPlayer;
+import FlyweightPattern.Ball;
+import FlyweightPattern.BallFlyWeightFactory;
 import ProxyPattern.DataLoader;
 import ProxyPattern.DataManagerProxy;
 
@@ -55,5 +57,16 @@ public class Main {
         DataLoader dataLoader = new DataManagerProxy("/users");
         dataLoader.viewData();
         dataLoader.viewData();
+
+        System.out.println("\n");
+
+        Ball ball = BallFlyWeightFactory.getBall("green", "10");
+        ball.setOrderNumber(10);
+        ball.setPosition(1);
+        System.out.println(ball.toString());
+        Ball ball1 = BallFlyWeightFactory.getBall("green", "10");
+        ball1.setOrderNumber(11);
+        ball1.setPosition(12);
+        System.out.println(ball1.toString());
     }
 }
