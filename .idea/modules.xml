@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BehaviouralPatterns/BehaviouralPatterns.iml" filepath="$PROJECT_DIR$/BehaviouralPatterns/BehaviouralPatterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/LLD.iml" filepath="$PROJECT_DIR$/LLD.iml" />
       <module fileurl="file://$PROJECT_DIR$/StructuralPatterns/StructuralPatterns.iml" filepath="$PROJECT_DIR$/StructuralPatterns/StructuralPatterns.iml" />
     </modules>
